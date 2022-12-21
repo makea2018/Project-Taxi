@@ -22,7 +22,7 @@
  * Образ JupyterLab со Spark: JupyterLab v 2.1.4 - Spark v 2.4.0 (ссылка на образ (git): https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker)
  * Canva для выполнения презентации
 
-**Структура проекта**
+**Структура проекта** <br>
 Project-Taxi<br>
 &emsp;-notebooks <br>
 &emsp;&emsp;-Check.ipynb <br>
