@@ -1,7 +1,7 @@
 # Project-Taxi
 Итоговый проект №5 для курса Data Engineer на тему: Клиенты и счета (Такси)
 
-**Цель проекта**: на основе данных поздок Taxi г. Нью-Йорк построить таблицу-отчет(далее "parquet") со следующей информацией для каждого дня:
+**Цель проекта**: на основе данных поездок Taxi г. Нью-Йорк построить таблицу-отчет(далее "parquet") со следующей информацией для каждого дня:
  * процент поездок по количеству человек в машине (5 групп пассажиров)
  * Самая дорогая поездка для каждой группы пассажиров
  * Самая дешевая поездка для каждой группы пассажиров
@@ -23,20 +23,20 @@
  * Canva для выполнения презентации
 
 **Структура проекта**
-Project-Taxi
-    -notebooks
-        -Check.ipynb
-        -Taxi_analysis.ipynb
-        -Taxi_parquet.ipynb 
-    -results
-        -parquet.csv
-        -result.parquet
-    -scala
-        -Main_Object.scala
-        -Taxi_Analysis.scala
-  -LICENCE
-  -README.md
-  -Project_Taxi.pdf
+Project-Taxi<br>
+&emsp;-notebooks <br>
+&emsp;&emsp;-Check.ipynb <br>
+&emsp;&emsp;-Taxi_analysis.ipynb <br>
+&emsp;&emsp;-Taxi_parquet.ipynb 
+&emsp;-results <br>
+&emsp;&emsp;-parquet.csv <br>
+&emsp;&emsp;-result.parquet <br>
+&emsp;-scala <br>
+&emsp;&emsp;-Main_Object.scala <br>
+&emsp;&emsp;-Taxi_Analysis.scala <br>
+&emsp;-LICENCE <br>
+&emsp;-README.md <br>
+&emsp;-Project_Taxi.pdf <br>
 
 **Комментарий по структуре проекта**
 1) В папке notebooks находятся ноутбуки для удобного просмотра выполнения задач проекта:
@@ -52,11 +52,11 @@ Project-Taxi
 **Руководство по использованию проекта**
  * Данные поездок Taxi могут быть скачаны по ссылке: https://disk.yandex.ru/d/DKeoopbGH1Ttuw
  * Файлы формата "ipynb" могут быть открыты в JupyterNotebook или Google Colab. Также приложил ссылку на образ докера, в котором есть и JupyterLab, и Spark под капотом. Уже все настроено, можно удобно пользоваться.
- * Файлы формата "scala" могут быть добавлены в проект в IntelliJ IDEA. Тогда дополнительно надо добавить следующие зависимости в структуру проекта: 
-    scalaVersion := "2.11.8"
-    sparkVersion = "2.3.4"
-    vegasVersion = "0.3.11"
-    libraryDependencies ++= Seq(
-        "org.apache.spark" %% "spark-core" % sparkVersion,
-        "org.apache.spark" %% "spark-sql" % sparkVersion,
-        "org.vegas-viz" %% "vegas" % vegasVersion)
+ * Файлы формата "scala" могут быть добавлены в проект в IntelliJ IDEA. Тогда дополнительно надо добавить следующие зависимости в структуру проекта: <br>
+&emsp;scalaVersion := "2.11.8" <br>
+&emsp;sparkVersion = "2.3.4" <br>
+&emsp;vegasVersion = "0.3.11" <br>
+&emsp;libraryDependencies ++= Seq( <br>
+&emsp;&emsp;"org.apache.spark" %% "spark-core" % sparkVersion, <br>
+&emsp;&emsp;"org.apache.spark" %% "spark-sql" % sparkVersion, <br>
+&emsp;&emsp;"org.vegas-viz" %% "vegas" % vegasVersion)
