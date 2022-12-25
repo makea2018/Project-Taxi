@@ -10,7 +10,7 @@
 
 **Стек проекта**
  * Git
- * Scala v. 2.11.8 (библиотека Vegas v 0.3.11 для анализа данных)
+ * Scala v. 2.11.12
  * Spark v. 2.4.0
  * Docker
  * Образ JupyterLab со Spark: JupyterLab v 2.1.4 - Spark v 2.4.0 (ссылка на образ (git): https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker)
