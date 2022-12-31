@@ -10,7 +10,7 @@
 
 **Стек проекта**
  * Git
- * Scala v. 2.11.8 (библиотека Vegas v 0.3.11 для анализа данных)
+ * Scala v. 2.11.12
  * Spark v. 2.4.0
  * Docker
  * Образ JupyterLab со Spark: JupyterLab v 2.1.4 - Spark v 2.4.0 (ссылка на образ (git): https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker)
@@ -20,9 +20,7 @@
 **Структура проекта** <br>
 Project-Taxi<br>
 &emsp;-notebooks <br>
-&emsp;&emsp;-Check.ipynb <br>
 &emsp;&emsp;-Taxi_analysis.ipynb <br>
-&emsp;&emsp;-Taxi_parquet.ipynb <br>
 &emsp;-results <br>
 &emsp;&emsp;-graph 1.png <br>
 &emsp;&emsp;-graph 2.png <br>
@@ -30,35 +28,31 @@ Project-Taxi<br>
 &emsp;&emsp;-parquet.csv <br>
 &emsp;&emsp;-result.parquet <br>
 &emsp;-scala <br>
-&emsp;&emsp;-Main_Object.scala <br>
-&emsp;&emsp;-Taxi_Analysis.scala <br>
+&emsp;&emsp;-Project_5.scala <br>
 &emsp;-LICENCE <br>
 &emsp;-README.md <br>
 &emsp;-Project_Taxi.pdf <br>
 &emsp;-Project-schema.svg <br>
 
 **Комментарий по структуре проекта**
-1) В папке notebooks находятся ноутбуки для удобного просмотра выполнения задач проекта:
- * Check.ipynb - код для проверки открытия сохраненного parquet в двух форматах
+1) В папке notebooks находятся ноутбуки выполнения задач проекта:
  * Taxi_analysis.ipynb - задание по аналитике данных
- * Taxi_parquet.ipynb - задание по выполнению основного задания
 2) В папке results находится parquet в формате "csv" и "parquet"
-3) В папке scala находится Scala код для решения осн. и доп. задания
+3) В папке scala находится Scala код для получения parquet и сохранения результата в папку results/
 4) LICENCE - лицензия, используемая в git репозитории проекта
 5) README.md - детальное описание проекта
 6) Project_Taxi.pdf - презентация в "pdf" формате
+7) Project-schema.svg - схема проекта
 
 **Руководство по использованию проекта**
  * Данные поездок Taxi могут быть скачаны по ссылке: https://disk.yandex.ru/d/DKeoopbGH1Ttuw
  * Файлы формата "ipynb" могут быть открыты в JupyterNotebook или Google Colab. Также приложил ссылку на образ докера, в котором есть и JupyterLab, и Spark под капотом. Уже все настроено, можно удобно пользоваться.
  * Файлы формата "scala" могут быть добавлены в проект в IntelliJ IDEA. Тогда дополнительно надо добавить следующие зависимости в структуру проекта: <br>
-&emsp;scalaVersion := "2.11.8" <br>
-&emsp;sparkVersion = "2.3.4" <br>
-&emsp;vegasVersion = "0.3.11" <br>
+&emsp;scalaVersion := "2.11.12" <br>
+&emsp;sparkVersion = "2.4.0" <br>
 &emsp;libraryDependencies ++= Seq( <br>
 &emsp;&emsp;"org.apache.spark" %% "spark-core" % sparkVersion, <br>
-&emsp;&emsp;"org.apache.spark" %% "spark-sql" % sparkVersion, <br>
-&emsp;&emsp;"org.vegas-viz" %% "vegas" % vegasVersion)
+&emsp;&emsp;"org.apache.spark" %% "spark-sql" % sparkVersion)
 
 **Аналитика: Графики** <br>
 *График 1: Зависимость размера чаевых от кол-ва пассажиров*
